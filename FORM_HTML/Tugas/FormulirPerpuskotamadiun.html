@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Kota Madiun</title>
+    <style>
+        /* .container {
+            text-align: center;
+        } */
+
+        .title {
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,49 +21,49 @@
         <center>PERPUSTAKAAN KOTA MADIUN</center>
     </h1>
     <div class="container">
-        <div class="tittle">
+        <div class="title">
             <h2>Formulir Pendaftaran Anggota</h2>
         </div>
-        <div class </div>
 
-            <form action="">
-                <label for="identitas">No. KTP / NIK:</label><br>
-                <input type="text" id="identitas" name="identitas"><br><br>
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <label for="nama">Nama lengkap:</label><br>
-                <input type="text" id="nama" name="nama"><br><br>
-                <label for="ttl">Tempat / Tanggal lahir:</label><br>
-                <input type="text" id="Tempat" name="Tempat"><b> / </b>
-                <input type="date" id="date" name="date"><br><br>
-                <label for="jenis">Jenis Kelamin:</label><br>
-                <input type="radio" id="lk" name="jenis">Laki-laki
-                <input type="radio" id="pr" name="jenis">Perempuan<br><br>
-                <label for="nama">Alamat:</label><br>
-                <textarea rows="5" cols="40"></textarea><br><br>
-                <label for="nama">Pendidikan Terakhir:</label><br>
-                <select name="PendidikanTerakhir">
-                    <option>SD</option>
-                    <option>SMP/MTS</option>
-                    <option>SMA/SMK/MA</option>
-                    <option>S1</option>
-                </select><br><br>
-                <label for="nama">Jenis buku yang anda suka :</label><br>
-                <input type="checkbox" name="Novel"> Novel
-                <input type="checkbox" name="Komik"> Komik
-                <input type="checkbox" name="Manga"> Manga
-                <input type="checkbox" name="Majalah"> Majalah
-                <input type="checkbox" name="Kamus"> Kamus
-                <input type="checkbox" name="Ensiklopedia"> Ensiklopedia
-                <input type="checkbox" name="Biografi"> Biografi
-                <input type="checkbox" name="Naskah"> Naskah 
-                <br><br>
-                <input type="submit" value="Submit">
+        <form action="">
+            <label for="identitas">No. KTP / NIK:</label><br>
+            <input type="text" id="identitas" name="identitas" placeholder="Masukkan No. KTP / NIK"><br><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Pilih Username"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Masukkan Password"><br><br>
+            <label for="nama">Nama lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap"><br><br>
+            <label for="ttl">Tempat / Tanggal lahir:</label><br>
+            <input type="text" id="Tempat" name="Tempat" placeholder="Tempat Lahir"><b> / </b>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="jenis">Jenis Kelamin:</label><br>
+            <input type="radio" id="lk" name="jenis">Laki-laki
+            <input type="radio" id="pr" name="jenis">Perempuan<br><br>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="5" cols="40" placeholder="Masukkan Alamat"></textarea><br><br>
+            <label for="pendidikan">Pendidikan Terakhir:</label><br>
+            <select id="pendidikan" name="PendidikanTerakhir">
+                <option>SD</option>
+                <option>SMP/MTS</option>
+                <option>SMA/SMK/MA</option>
+                <option>S1</option>
+            </select><br><br>
+            <label for="jenisBuku">Jenis buku yang anda suka :</label><br>
+            <input type="checkbox" id="novel" name="Novel" value="Novel"> Novel
+            <input type="checkbox" id="komik" name="Komik" value="Komik"> Komik
+            <input type="checkbox" id="manga" name="Manga" value="Manga"> Manga
+            <input type="checkbox" id="majalah" name="Majalah" value="Majalah"> Majalah
+            <input type="checkbox" id="kamus" name="Kamus" value="Kamus"> Kamus
+            <input type="checkbox" id="ensiklopedia" name="Ensiklopedia" value="Ensiklopedia"> Ensiklopedia
+            <input type="checkbox" id="biografi" name="Biografi" value="Biografi"> Biografi
+            <input type="checkbox" id="naskah" name="Naskah" value="Naskah"> Naskah 
+            <br><br>
+            <input type="submit" value="Submit">
 
-                <br>
-            </form>
+            <br>
+        </form>
+    </div>
 </body>
 
 </html>
