@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<script lang="JavaScript">
+    // Operasi Dasar Aritmatika
+    function pesan() {
+                    alert ("memanggil javascript lewat body onload")
+                }
+    function test(val1, val2){
+        document.write("<br>"+"Perkalian : val1*val2 "+"<br>")
+        document.write(val1*val2)
+        document.write("<br>"+"Pembagian : val1/val2 "+"<br>")
+        document.write(val1/val2)
+        document.write("<br>"+"Penjumlahan : val1+val2"+"<br>")
+        document.write(val1+val2)
+        document.write("<br>"+"Pengurangan : val1-val2"+"<br>")
+        document.write(val1-val2)
+        document.write("<br>"+"Modulus : val1%val2"+"<br>")
+        document.write(val1%val2)
+    }
+
+    // Operasi Relational
+    function test1(val1, val2){
+        vall=window,prompt("Nilai I :")
+        val2=window.prompt("Nilai II :")
+        document.write("<br>"+"val1==val2"+"<br>")
+        document.write(val1==val2)
+        document.write("<br>"+"val1!=val2"+"<br>")
+        document.write(val1!=val2)
+        document.write("<br>"+"val1&gtval2"+"<br>")
+        document.write(val1>val2)
+        document.write("<br>"+"val1&ltval2"+"<br>")
+        document.write(val1<val2)
+    }
+
+    // Operator Switch
+    function test2(){
+        val1=window.prompt("Input Nilai (1-5):")
+        switch (val1){
+            case "1" :
+            document.write("bilangan satu")
+            break
+            case "2" :
+            document.write("bilangan dua")
+            break
+            case "3" :
+            document.write("bilangan tiga")
+            break
+            case "4" :
+            document.write("bilangan empat")
+            break
+            case "5" :
+            document.write("bilangan lima")
+            break
+            default :
+            document.write("bilangan lainnya")
+        }
+        
+    }
+
+    // Form Input and Button
+    function test3(){
+        var val1=document.kirim.T1.value
+        if (val1%2==0)
+        document.kirim.T2.value-"bilangan genap"
+        else
+        document.kirim.T2.value="bilangan ganjil"
+    }
+
+
+
+</script>
+<body>
+    Percobaan memakai JavaScript:<br>
+    <script lang="JavaScript">
+        <!-- 
+            // Dasar Java Script
+            document.write("Selamat Mencoba Javascript<br>");
+            document.write("Semoga sukses!<br>");
+            var nama = prompt("Siapa nama anda?", "Masukkan nama anda");
+            document.write("Hai, " + nama);
+        //-->
+    </script>
+    <br>
+    <!-- Body Html Aritmatika -->
+    <input type="button" name="button1" value="Aritmatika" onclick=test(9,4)><br>
+
+    <!-- Body Html Relational -->
+    <input type="button" name="button2" value="relational" onclick=test1()><br>
+
+    <script LANGUAGE = "JavaScript">
+        <!--
+            // Seleksi Kondisi if else
+            var nilai = prompt("Nilai(0-100) :", 0);
+            var hasil ="";
+            if (nilai >= 60)hasil ="Lulus";
+            else
+            hasil = "Tidak Lulus";
+            document.write("Hasil : "+ hasil);
+        //-->
+    </script>
+    <br>
+
+    <!-- body html Switch -->
+    <input type="button" name="button3" value="switch" onclick=test2()><br>
+
+
+    <SCRIPT language="Javascript">
+        <!--
+            // Pemakaian Looping For
+            for (x=0;x<=10;x++)
+            document.write(x+"<br>")
+        //-->
+    </SCRIPT>
+
+    <SCRIPT language="Javascript">
+        <!--
+            // Pemakaian do while
+            var x=0
+            do{
+                document.write(x+"<br>")
+                x++;
+            }
+            while (x<=10)
+        //-->
+    </SCRIPT>
+
+    <script language="javascript">
+        <!--
+            // Pemakaian while
+            var x=0;
+            while (x<=10){
+                document.write(x+"<br>");
+                x++;
+            }
+        //-->
+    </script>
+
+    <!-- body html form -->
+    <form method="POST" name="kirim">
+        <p>
+            BIL <input type="text" name="T1" size="20">
+            MERUPAKAN BIL <input type="text" name="T2" size="20">
+        </p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test3()></p>
+    </form>
+
+    <SCRIPT LANGUAGE = "Javascript">
+        <!--
+        function ubahwarnaLB(warna) {
+        document.bgColor = warna;
+        }
+        function ubahwarnaLD(warna) {
+        document.fgColor = warna;
+        }
+        //-->
+    </SCRIPT>
+        <H1>TES</H1>
+        <FORM>
+            <INPUT TYPE ="BUTTON"
+                VALUE = "Latar Belakang Hijau"
+                onClick = "ubahwarnaLB('GREEN')">
+            <INPUT TYPE ="BUTTON"
+                VALUE = "Latar Belakang Putih"
+                onClick = "ubahwarnaLB('WHITE')">
+            <INPUT TYPE ="BUTTON"
+                VALUE = "Teks Kuning"
+                onClick ="ubahwarnaLD('YELLOW')">
+            <INPUT TYPE = "BUTTON"·
+                VALUE = "Teks Biru"
+                onClick = "ubahwarnaLD('BLUE')">
+        </FORM>
+</body>
+</html>
