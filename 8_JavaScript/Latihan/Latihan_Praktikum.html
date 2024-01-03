@@ -172,5 +172,37 @@
                 VALUE = "Teks Biru"
                 onClick = "ubahwarnaLD('BLUE')">
         </FORM>
+
+    <!-- Penerapan Method Get Pada Form -->
+    <form method="get">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"/></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="text" nama="nim"/></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+                    <input type="submit" name="submit" value="simpan"/>&nbsp;
+                    <input type="Reset" name="Reset" value="Reset"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <?php 
+        if(isset($_GET['submit'])){
+            $nama = $_GET['nama'];
+            $nim = $_GET['nim'];
+
+            echo "<br> INI OUTPUT SESUAI INPUTAN DARI FORM DIATAS <br>";
+            echo "Nama : ".$nama;
+            echo "<br>Nim : . $nim";
+        }
+    ?>
 </body>
 </html>
