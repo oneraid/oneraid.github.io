@@ -1,9 +1,9 @@
 {
+  "homepage": "https://github.com/oneraid/oneraid.github.io",
   "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://oneraid.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
